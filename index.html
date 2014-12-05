@@ -13,15 +13,14 @@ tagline: Musing over the shadows on the wall
                 <!-- Blog Post Template on Index page -->
                 <div class="well">
                 <p>
-                    {{post.tags | array_to_sentence_string}} | {{ post.date | date_to_string }}
+                    {{post.tags | array_to_sentence_string}} | {{ post.date | date_to_long_string }}
                 </p>
                 <h3>
                     <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
                 </h3>
-                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date_to_long_string }}</p>
+                {% if page.tagline %}<h5>{{ page.tagline }}</h5>{% endif %} 
                 <!-- <hr>
                 <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
-                <hr>
 		{{ post.excerpt }}                
                 <a class="btn btn-primary" href="{{ BASE_PATH }}{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
