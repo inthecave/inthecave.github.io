@@ -12,12 +12,17 @@ tagline: Musing over the shadows on the wall
 
                 <!-- Blog Post Template on Index page -->
                 <div class="well">
-                <h2>
+                <p class="lead">
+                    {{post.tags}}
+                </p>
+                <h4>
                     <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-                </h2>
+                </h4>
+                <!--
                 <p class="lead">
                     Tagged under: {{post.tags | array_to_sentence_string}}
                 </p>
+                -->
                 <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date_to_string }}</p>
                 <!-- <hr>
                 <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
@@ -25,7 +30,6 @@ tagline: Musing over the shadows on the wall
 		{{ post.excerpt }}                
                 <a class="btn btn-primary" href="{{ BASE_PATH }}{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
-                <hr>
 
   {% endfor %}
 
