@@ -13,8 +13,8 @@ tagline: Musing over the shadows on the wall
                 <!-- Blog Post Template on Index page -->
                 <div class="well">
                 <p>
-                    {% for tag in post.tags %}
-                    <a href="{{ BASE_PATH }}{{ tag.url }}">{{ post.tags }}</a> | &nbsp;
+                    {% for category in post.categories %}
+                    <a href="{{ BASE_PATH }}{{ category.url }}">{{ post.categories }}</a> | &nbsp;
                     {% endfor %}
                     | {{ post.date | date_to_long_string }}
                 </p>
