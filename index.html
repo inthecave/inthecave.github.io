@@ -12,18 +12,13 @@ tagline: Musing over the shadows on the wall
 
                 <!-- Blog Post Template on Index page -->
                 <div class="well">
-                <p class="lead">
-                    {{post.tags}}
+                <p>
+                    {{post.tags | array_to_sentence_string}} | {{ post.date | date_to_string }}
                 </p>
-                <h4>
+                <h3>
                     <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-                </h4>
-                <!--
-                <p class="lead">
-                    Tagged under: {{post.tags | array_to_sentence_string}}
-                </p>
-                -->
-                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date_to_string }}</p>
+                </h3>
+                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date_to_long_string }}</p>
                 <!-- <hr>
                 <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
                 <hr>
