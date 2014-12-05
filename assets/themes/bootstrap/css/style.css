@@ -76,3 +76,7 @@
 body {
   background-color: #ECECEC;
 }
+
+p.justify {
+  text-align: justify;
+}

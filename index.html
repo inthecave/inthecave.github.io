@@ -14,17 +14,19 @@ tagline: Musing over the shadows on the wall
                 <div class="well">
                 <p>
                     {% for category in post.categories %}
-                    <a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref">{{ post.categories }}</a> | &nbsp;
+                    <a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref">{{ post.categories }}</a> | 
                     {% endfor %}
                     {{ post.date | date_to_long_string }}
                 </p>
                 <h4>
                     <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
                 </h4>
-                {% if post.tagline %}<h5>{{ post.tagline }}</h5>{% endif %}
+                {% if post.tagline %}<h6>{{ post.tagline }}</h6>{% endif %}
                 <!-- <hr>
                 <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
-		{{ post.excerpt }}                
+		<p class="justify">
+        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+        </p>                
                 <a class="btn btn-primary" href="{{ BASE_PATH }}{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
 
