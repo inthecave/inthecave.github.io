@@ -85,7 +85,7 @@ p.justify {
 
 .search {
   position: absolute;
-  top: 55px
+  top: 55px;
   left: 25%;
   z-index: 1;
   max-height: 20px;
