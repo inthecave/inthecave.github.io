@@ -68,6 +68,7 @@
 .navbar {
   box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
   min-height: 80px;
+  margin-bottom: 80px;
 }
 
 .navbar-default {
@@ -80,4 +81,12 @@ body {
 
 p.justify {
   text-align: justify;
+}
+
+.search {
+  position: absolute;
+  top: 55px
+  left: 25%;
+  z-index: 1;
+  max-height: 20px;
 }
