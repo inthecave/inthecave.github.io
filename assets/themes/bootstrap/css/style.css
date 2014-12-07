@@ -75,10 +75,34 @@
   background-color: #2196f3;
 }
 
+.navbar-brand {
+  color: #ECECEC;
+}
+
+.navbar-brand:hover {
+  color: #666;
+}
+
+.navbar .navbar-nav>li>a {
+  color: #ECECEC;
+}
+
+.navbar .navbar-nav>li>a:hover {
+  color: #666;
+}
+
 body {
   background-color: #ECECEC;
 }
 
 p.justify {
   text-align: justify;
+}
+
+.search {
+  margin-top: -80px;
+}
+
+.btn-primary {
+  background-color: #2196f3;
 }
