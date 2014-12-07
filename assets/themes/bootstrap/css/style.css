@@ -82,6 +82,10 @@
   color: #666;
 }
 
+.navbar-default .navbar-nav>.active>a {
+  background-color: #ECECEC;
+}
+
 .navbar .navbar-nav>li>a {
   color: #ECECEC;
 }
