@@ -1,3 +1,17 @@
+<div class="well">
+  <p>
+  {% for category in post.categories %}
+    <a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref">{{ post.categories }}</a> | 
+  {% endfor %}
+  {{ post.date | date_to_long_string }}
+  </p>
+  <h4><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
+  {% if post.tagline %}<h6>{{ post.tagline }}</h6>{% endif %}
+    <!-- <hr>
+    <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
+  <p class="justify">{{ content | remove: '<p>' | remove: '</p>' }}</p>
+</div>
+
 <div class="page-header">
   <h3>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h3>
 </div>

@@ -14,7 +14,7 @@ tagline: Musing over the shadows on the wall
                 <div class="well">
                 <p>
                     {% for category in post.categories %}
-                    <a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref">{{ post.category }}</a> | 
+                    <a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref">{{ post.categories }}</a> | 
                     {% endfor %}
                     {{ post.date | date_to_long_string }}
                 </p>
