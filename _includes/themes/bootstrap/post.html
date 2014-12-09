@@ -1,8 +1,8 @@
     {% unless page.categories == empty %}
-      <ul class="nav nav-pills">
+      <ul class="categories_list">
         <!-- <li><i class="icon-folder-open"></i></li> -->
         {% assign categories_list = page.categories %}
-        {% include JB/categories_list %}
+        {% include JB/categories_list2 %}
       </ul>
     {% endunless %}
 

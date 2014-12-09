@@ -109,3 +109,13 @@ p.justify {
 .btn-primary {
   background-color: #2196f3;
 }
+
+.categories_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.categories_list>li {
+  display: inline;
+}
