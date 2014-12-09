@@ -3,6 +3,7 @@
         <!-- <li><i class="icon-folder-open"></i></li> -->
         {% assign categories_list = page.categories %}
         {% include JB/categories_list2 %}
+      <li>{{ page.date | date_to_long_string }}</li>
       </ul>
     {% endunless %}
 
