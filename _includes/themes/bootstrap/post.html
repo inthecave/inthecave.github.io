@@ -1,19 +1,22 @@
-    {% unless page.categories == empty %}
-      <ul class="categories_list">
-        <!-- <li><i class="icon-folder-open"></i></li> -->
-        {% assign categories_list = page.categories %}
-        {% include JB/categories_list2 %}
-      <li>{{ page.date | date_to_long_string }}</li>
-      </ul>
-    {% endunless %}
+<div class="container about">
+  <div class="row">
+    <!-- Blog Entries Column -->
+      <div class="col-md-9">
+        <div class="well">
+          {% unless page.categories == empty %}
+            <ul class="categories_list">
+              <!-- <li><i class="icon-folder-open"></i></li> -->
+              {% assign categories_list = page.categories %}
+              {% include JB/categories_list2 %}
+              <li>{{ page.date | date_to_long_string }}</li>
+            </ul>
+          {% endunless %}
 
-<h4>{{ page.title }} {% if page.tagline %}<br /><small>{{page.tagline}}</small>{% endif %}</h4>
+          <h4>{{ page.title }} {% if page.tagline %}<br /><small>{{page.tagline}}</small>{% endif %}</h4>
 
-<div class="row post-full">
-  <div class="col-md-12">
-    <div class="content">
-      {{ content }}
-    </div>
+          {{ content }}
+
+        </div>
     
     <ul class="pagination">
       {% if page.previous %}
@@ -25,10 +28,11 @@
       {% if page.next %}
         <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
       {% else %}
-        <li class="next disabled"><a>Next &rarr;</a>
+        <li class="next disabled"><a>Next &rarr;</a></li>
       {% endif %}
     </ul>
     <hr>
     {% include JB/comments %}
+    </div>
   </div>
 </div>
