@@ -1,7 +1,4 @@
 <p>
-{% for category in post.categories %}
-<a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref">{{ category }}</a> | 
-{% endfor %}
 {{ post.date | date_to_long_string }}
 </p>
 <h4>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h4>
