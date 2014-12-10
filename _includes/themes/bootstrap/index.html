@@ -27,7 +27,7 @@
                 <div class="well">
                     <h4>Post Categories</h4>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-8">
                             <ul class="list-unstyled">
   {% assign categories_list = site.categories %}
   {% include JB/categories_list %}
@@ -37,6 +37,24 @@
 
                     </div>
                     <!-- /.row -->
+                </div>
+                <div class="well">
+                    <h4>Search</h4>
+                    <div class="row">
+                        <script>
+                        (function() {
+                         var cx = '005145766886826581963:8g3czkmjw0g';
+                         var gcse = document.createElement('script');
+                         gcse.type = 'text/javascript';
+                         gcse.async = true;
+                         gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                         '//www.google.com/cse/cse.js?cx=' + cx;
+                         var s = document.getElementsByTagName('script')[0];
+                          s.parentNode.insertBefore(gcse, s);
+                         })();
+                        </script>
+                        <gcse:search></gcse:search>
+                    </div>
                 </div>
             </div>
         </div>
