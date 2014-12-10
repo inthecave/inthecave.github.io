@@ -102,6 +102,10 @@ p.justify {
   text-align: justify;
 }
 
+h4 small {
+  color: #666;
+}
+
 .search {
   margin-top: -80px;
 }
