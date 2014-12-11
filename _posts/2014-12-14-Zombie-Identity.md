@@ -10,7 +10,7 @@ Morgan reveals to Rick that he had a chance to kill his wife, after she was bitt
 
 More generally, throughout *The Walking Dead* and other zombie movies and shows we are find people dealing with this philosophical question: are the zombie versions of my friends my friends? Or does my friend cease to be when they become a zombie?
 
-<!-- more -->
+<!--more-->
 
 This is one of those issues we ought to figure out before we find ourselves in the post-apocalyptic hellscape. For even though we may kill the being in question whether it is our friend or not (it is trying to eat our brains after all) if we are not convinced it is not our friend, we may pause before acting and that pause may be the difference between life and death (or life and zombie-life...)
 
