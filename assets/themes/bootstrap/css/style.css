@@ -105,6 +105,10 @@ p.justify {
   font-family: helvetica,Arial,sans-serif;
 }
 
+p {
+  font-family: helvetica,Arial,sans-serif;
+}
+
 h4 small {
   color: #666;
 }
