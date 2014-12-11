@@ -24,9 +24,8 @@ tagline: Musing over the shadows on the wall
                 </h4>
                 <!-- <hr>
                 <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
-		<p class="justify">
-        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-        </p>                
+		{{ post.content | split: '<!--more-->' | first }}
+                        
                 <a class="btn btn-primary" href="{{ BASE_PATH }}{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
 
