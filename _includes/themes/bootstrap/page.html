@@ -1,9 +1,40 @@
-<div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
-</div>
+<div class="container about">
+  <div class="row">
+  	<div class="col-md-9">
+  		<div class="well">
+  			<h4>{{ page.title }}</h4>
+  			<p class="justify">{{ content | remove '<p>' | remove '</p>' }}</p>
+  		</div>
+  	<div class="col-md-3">
+  		<div class="well">
+        <h4>Connect</h4>
+          <div class="row">
+            <div class="col-lg-8">
+              <ul class="list-unstyled">
+              <li><a href="{{ BASE_PATH }}/rss.xml" title="RSS Feed"><i class="fa fa-rss-square"></i>&nbsp;RSS Feed</a></li>
+              <li><a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via=immarcussb" 
+              target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square"></i>&nbsp;Share on Twitter</a></li>
+              <li><a class="fb-share" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" title="share on Facebook"><i class="fa fa-facebook-square"></i>&nbsp;Share on Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
 
-<div class="row">
-  <div class="col-xs-12">
-      {{ content }}
+      <div class="well">
+        <h4>Post Categories</h4>
+          <div class="row">
+            <div class="col-lg-8">
+              <ul class="list-unstyled">
+              {% assign categories_list = site.categories %}
+              {% include JB/categories_list %}
+              </ul>
+            </div>
+            <!-- /.col-lg-6 -->
+          </div>
+          <!-- /.row -->
+      </div>
+      <!-- /.well -->
+    </div>
+    <!-- /.col-md-3 -->
   </div>
 </div>
